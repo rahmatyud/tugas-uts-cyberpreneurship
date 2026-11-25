@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahmat Yudianto – Cyberpreneurship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fc;--ink:#1f2a44;--muted:#5b6780;--line:#dde3ee;--card:#ffffff;--accent:#4a63d8;--accent-ink:#ffffff;--tint:#dbe3ff}
+@media (prefers-color-scheme:dark){:root{--bg:#121826;--ink:#e8ecf6;--muted:#9aa6bf;--line:#263149;--card:#1a2236;--accent:#8aa0ff;--accent-ink:#121826;--tint:#2b3a6b}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.65}
+h1,h2,h3,.brand,nav a,.btn{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.bar{max-width:960px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-weight:800;text-decoration:none;font-size:1.1rem}
+nav{display:flex;gap:20px}
+nav a{text-decoration:none;font-weight:500}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:3px;text-underline-offset:6px}
+main{max-width:960px;margin:auto;padding:0 20px}
+section{padding:72px 0 24px}
+.hero{padding-top:88px}
+h1{font-size:clamp(2.6rem,8vw,5rem);line-height:1;margin:0 0 20px;font-weight:800;letter-spacing:-.03em}
+h1 mark{background:linear-gradient(transparent 62%,var(--tint) 62%);color:inherit}
+h2{font-size:2rem;margin:0 0 8px;letter-spacing:-.02em}
+.lead{max-width:60ch;color:var(--muted)}
+.sub{color:var(--muted);max-width:60ch;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:700;font-size:.95rem}
+.btn.ghost{background:none;border:2px solid var(--ink);color:var(--ink)}
+.hero-top{display:flex;align-items:center;gap:40px;flex-wrap:wrap-reverse}
+.hero-text{flex:1 1 380px}
+.foto{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid var(--card);box-shadow:0 0 0 3px var(--tint);flex:0 0 auto}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:32px;border-top:1px solid var(--line)}
+.facts div{padding:16px 16px 16px 0;border-bottom:1px solid var(--line)}
+.facts b{display:block;font-family:"Bricolage Grotesque",sans-serif}
+.list{display:grid;gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:8px}
+.item h3{margin:0;font-size:1.2rem}
+.item p{margin:0;color:var(--muted)}
+.tag{font-family:"Bricolage Grotesque",sans-serif;font-size:.85rem;color:var(--muted)}
+.item .btn{justify-self:start;margin-top:6px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{aspect-ratio:4/3;background:var(--line);display:grid;place-items:center;color:var(--muted);font-family:"Bricolage Grotesque",sans-serif}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.prod div.body{padding:18px;display:grid;gap:6px;flex:1;align-content:start}
+.prod h3{margin:0}
+.prod p{margin:0;color:var(--muted)}
+.price{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.15rem}
+footer{max-width:960px;margin:72px auto 0;padding:24px 20px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="#top">rahmatyud.my.id</a>
+    <nav aria-label="Menu utama">
+      <a href="#profil">Profil</a>
+      <a href="#tugas">Tugas</a>
+      <a href="#produk">Produk</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section id="profil" class="hero">
+    <div class="hero-top">
+      <div class="hero-text">
+      <h1>Halo, saya <mark>Rahmat</mark></h1>
+      <p class="lead">Mahasiswa yang sedang belajar membangun bisnis lewat internet. Web ini berisi profil saya, rangkuman tugas Cyberpreneurship, dan produk yang saya kembangkan.</p>
+      <p><a class="btn" href="#produk">Lihat produk</a> <a class="btn ghost" href="#tugas">Baca tugas</a></p>
+      </div>
+      <img class="foto" src="foto-profil.jpg" alt="Foto Rahmat Yudianto" width="220" height="220" onerror="this.style.display='none'">
+    </div>
+    <div class="facts">
+      <div><b>Nama lengkap</b>Rahmat Yudianto</div>
+      <div><b>NIM</b>2412500874</div>
+      <div><b>Kampus</b>Universitas Budi Luhur</div>
+      <div><b>Program studi</b>Sistem Informasi</div>
+      <div><b>Email</b><a href="mailto:rahmatyudiantooo@gmail.com">rahmatyudiantooo@gmail.com</a></div>
+    </div>
+  </section>
+
+  <section id="tugas">
+    <h2>Tugas</h2>
+    <p class="sub">Rangkuman materi Cyberpreneurship. Setiap rangkuman bisa dibaca atau diunduh dalam bentuk PDF.</p>
+    <div class="list">
+      <article class="item">
+        <span class="tag">Pertemuan 1</span>
+        <h3>Judul materi pertama</h3>
+        <p>Tulis ringkasan singkat 1–2 kalimat tentang isi rangkuman ini.</p>
+        <a class="btn" href="pdf/tugas-1.pdf" target="_blank" rel="noopener">Buka PDF</a>
+      </article>
+      <article class="item">
+        <span class="tag">Pertemuan 2</span>
+        <h3>Judul materi kedua</h3>
+        <p>Tulis ringkasan singkat 1–2 kalimat tentang isi rangkuman ini.</p>
+        <a class="btn" href="pdf/tugas-2.pdf" target="_blank" rel="noopener">Buka PDF</a>
+      </article>
+      <article class="item">
+        <span class="tag">Pertemuan 3</span>
+        <h3>Judul materi ketiga</h3>
+        <p>Tulis ringkasan singkat 1–2 kalimat tentang isi rangkuman ini.</p>
+        <a class="btn" href="pdf/tugas-3.pdf" target="_blank" rel="noopener">Buka PDF</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="produk">
+    <h2>Produk</h2>
+    <p class="sub">Produk atau jasa yang saya tawarkan untuk tugas ini.</p>
+    <div class="products">
+      <article class="prod">
+        <div class="thumb">Foto produk 1</div>
+        <div class="body">
+          <h3>Nama produk 1</h3>
+          <p>Deskripsi singkat: apa produknya dan untuk siapa.</p>
+          <span class="price">Rp 25.000</span>
+          <a class="btn" href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Produk%201" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        </div>
+      </article>
+      <article class="prod">
+        <div class="thumb">Foto produk 2</div>
+        <div class="body">
+          <h3>Nama produk 2</h3>
+          <p>Deskripsi singkat: apa produknya dan untuk siapa.</p>
+          <span class="price">Rp 40.000</span>
+          <a class="btn" href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Produk%202" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Rahmat Yudianto. Tugas UTS Cyberpreneurship.</footer>
+</body>
+</html>
