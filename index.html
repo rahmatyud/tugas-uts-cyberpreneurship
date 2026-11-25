@@ -88,26 +88,26 @@ footer{max-width:960px;margin:72px auto 0;padding:24px 20px 40px;border-top:1px 
   <section id="tugas">
     <h2>Tugas</h2>
     <p class="sub">Rangkuman materi Cyberpreneurship. Setiap rangkuman bisa dibaca atau diunduh dalam bentuk PDF.</p>
-    <div class="list">
-      <article class="item">
-        <span class="tag">Pertemuan 1</span>
-        <h3>Judul materi pertemuan 1</h3>
-        <p>Tulis ringkasan singkat 1–2 kalimat tentang isi rangkuman ini.</p>
-        <a class="btn" href="pdf/tugas-1.pdf" target="_blank" rel="noopener">Buka PDF</a>
-      </article>
-      <article class="item">
-        <span class="tag">Pertemuan 3</span>
-        <h3>Judul materi pertemuan 3</h3>
-        <p>Tulis ringkasan singkat 1–2 kalimat tentang isi rangkuman ini.</p>
-        <a class="btn" href="pdf/tugas-3.pdf" target="_blank" rel="noopener">Buka PDF</a>
-      </article>
-      <article class="item">
-        <span class="tag">Pertemuan 4</span>
-        <h3>Judul materi pertemuan 4</h3>
-        <p>Tulis ringkasan singkat 1–2 kalimat tentang isi rangkuman ini.</p>
-        <a class="btn" href="pdf/tugas-4.pdf" target="_blank" rel="noopener">Buka PDF</a>
-      </article>
-    </div>
+    <div class="list" id="daftar-tugas"></div>
+
+    <script>
+      // ===== ISI TUGAS DI SINI =====
+      // Satu baris = satu pertemuan: [nomor, "judul", "ringkasan"]
+      // Nama file PDF mengikuti nomor: pdf/tugas-1.pdf, pdf/tugas-3.pdf, dst.
+      const daftarTugas = [
+        [1, "Judul materi pertemuan 1", "Ringkasan singkat materi."],
+        [3, "Judul materi pertemuan 3", "Ringkasan singkat materi."],
+        [4, "Judul materi pertemuan 4", "Ringkasan singkat materi."],
+      ];
+      // ===== BAGIAN BAWAH TIDAK PERLU DIUBAH =====
+      document.getElementById("daftar-tugas").innerHTML = daftarTugas.map(([no, judul, ringkasan]) => `
+        <article class="item">
+          <span class="tag">Pertemuan ${no}</span>
+          <h3>${judul}</h3>
+          <p>${ringkasan}</p>
+          <a class="btn" href="pdf/tugas-${no}.pdf" target="_blank" rel="noopener">Buka PDF</a>
+        </article>`).join("");
+    </script>
   </section>
 
   <section id="produk">
